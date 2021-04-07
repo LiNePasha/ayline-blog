@@ -63,7 +63,7 @@ audioList.forEach(function(audioSingle,index){
     var dataActive = this.getAttribute('data-active');
     var audioSource = document.getElementById("audioSource");
     audioSource.src = dataAudio;
-    document.getElementById("audioTitle").innerHTML = audioName;
+    document.getElementById("audioTitle").innerHTML = `<a href="audio-gallary-detail.html">${audioName}</a>`;
     // audio.load();
     // audio.play();
     for (var i=0; i < audioList.length; i++){
